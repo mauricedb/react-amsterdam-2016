@@ -20,8 +20,8 @@ class App extends Component {
     });
 
     polly()
-      .waitAndRetry([1000, 2000])
-      .executeForPromise(() =>
+      // .waitAndRetry([1000, 2000])
+      // .executeForPromise(() =>
         fetch('api/time')
           .then(rsp => {
             console.log(rsp)
@@ -31,17 +31,7 @@ class App extends Component {
               return Promise.reject(rsp);
             }
           })
-      )
-
-    // fetch('api/time')
-    //   .then(rsp => {
-    //     if (rsp.ok) {
-    //         return rsp;
-    //     } else {
-    //       return Promise.reject(rsp);
-    //     }
-    //   })
-
+      // )
       .then(rsp => rsp.json())
       .then(state => this.setState(state))
   }

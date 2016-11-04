@@ -24,7 +24,7 @@ var movie = {
         "characters": ["Aron Ralston"]
     }, {
         "id": 364624768,
-        "name": "Kate Burton",
+        // "name": "Kate Bu     rton",
         "characters": ["Aron's Mom"]
     }],
     "abridgedDirectors": ["Danny Boyle"]

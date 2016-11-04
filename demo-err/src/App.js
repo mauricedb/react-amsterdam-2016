@@ -11,7 +11,7 @@ const App = React.createClass({
 
   updateTime() {
     this.setState({
-      now: new Date() //.toLocaleTimeString()
+      now: new Date().toLocaleTimeString()
     });
   },
 

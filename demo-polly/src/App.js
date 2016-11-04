@@ -26,9 +26,9 @@ class App extends Component {
 
     fetch('api/chaos?t=' + Date.now())
       .then(state => {
-        // if (this.state.request === '') {
+        if (this.state.request === '') {
           this.setState({request: 'One'});
-        // }
+        }
       });
 
     setTimeout(() => 
@@ -41,8 +41,8 @@ class App extends Component {
     this.setState({now: 'Fetching...'});
 
     polly()
-      // .waitAndRetry([1000, 2000])
-      // .executeForPromise(() =>
+      .waitAndRetry([1000, 2000])
+      .executeForPromise(() =>
     fetch('api/time').then(rsp => {
       console.log(rsp)
       if (rsp.ok) {
@@ -51,7 +51,7 @@ class App extends Component {
         return Promise.reject(rsp);
       }
     })
-    // )
+    )
       .then(rsp => rsp.json())
       .then(state => this.setState(state))
   }

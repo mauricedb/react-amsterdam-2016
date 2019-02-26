@@ -1,0 +1,13 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "demo-err/package.json",
+        "demo-polly/package.json",
+        "swagger/javascript-client/package.json",
+        "swagger/nodejs-server-server/package.json",
+        "swagger/typescript-fetch-client/package.json"
+      ]
+    }
+  }
+}

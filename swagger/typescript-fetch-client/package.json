@@ -13,7 +13,7 @@
     "prepublish" : "typings install && tsc"
   },
   "devDependencies": {
-    "typescript": "^1.8.10",
-    "typings": "^1.0.4"
+    "typescript": "^3.3.3333",
+    "typings": "^2.1.1"
   }
 }
